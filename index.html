@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমার পোর্টফোলিও</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <h1>আমার পোর্টফোলিও</h1>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">হোম</a></li>
+                <li><a href="about.html">আমার সম্পর্কে</a></li>
+                <li><a href="projects.html">প্রজেক্টস</a></li>
+                <li><a href="blog.html">ব্লগ</a></li>
+                <li><a href="contact.html">যোগাযোগ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>স্বাগতম! <span class="wave">👋</span></h1>
+                <h2>আমি একজন <span class="typed-text"></span></h2>
+                <p>ক্রিয়েটিভ এবং ইউজার-ফ্রেন্ডলি ওয়েবসাইট তৈরি করা আমার পেশা</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn primary-btn">আমার কাজ দেখুন</a>
+                    <a href="#" class="btn secondary-btn">যোগাযোগ করুন</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/calgary-website-development-cornerstone-digital.jpg" alt="হিরো ইমেজ">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>আমার সম্পর্কে</h2>
+        <div class="about-content">
+            <img src="images/gradient-coding-logo-template_23-2148809439.avif" alt="প্রোফাইল ছবি">
+            <p>আমি গত ৫ বছর ধরে ওয়েব ডেভেলপমেন্ট নিয়ে কাজ করছি। HTML, CSS, JavaScript, React সহ বিভিন্ন টেকনোলজিতে আমার দক্ষতা রয়েছে।</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>আমার প্রজেক্টস</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="images/hom1-min.jpg" alt="প্রজেক্ট ১">
+                <div class="project-content">
+                    <h3>প্রজেক্ট ১</h3>
+                    <p>প্রজেক্টের বিবরণ এখানে লিখুন</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="#" class="project-link">বিস্তারিত দেখুন</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/home2.jpg" alt="প্রজেক্ট ২">
+                <h3>প্রজেক্ট ২</h3>
+                <p>প্রজেক্টের বিবরণ এখানে লিখুন</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>যোগাযোগ করুন</h2>
+        <form>
+            <input type="text" placeholder="আপনার নাম">
+            <input type="email" placeholder="আপনার ইমেইল">
+            <textarea placeholder="আপনার বার্তা"></textarea>
+            <button type="submit">পাঠিয়ে দিন</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; ২০২৪ আমার পোর্টফোলিও। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let typed = new Typed('.typed-text', {
+            strings: ['ওয়েব ডেভেলপার', 'ফ্রন্ট-এন্ড ডেভেলপার', 'ফ্রিল্যান্সার'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html> 
